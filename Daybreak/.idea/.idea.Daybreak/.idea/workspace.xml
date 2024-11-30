@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f50301a9-e4c2-4b32-a2ab-516477a704ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Daybreak/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Daybreak/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playerMovement.cs" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/Assets/QuickDither/Pipelines/URP/DitheredMaterialBase.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QuickDither/Pipelines/URP/DitheredMaterialBase.mat" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/player movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/TMP/TMP_MaterialManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -43,8 +44,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+
+    "git-widget-placeholder": "mainMenu",
+
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

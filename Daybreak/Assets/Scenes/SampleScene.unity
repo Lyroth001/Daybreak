@@ -1099,6 +1099,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1625503624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3807986945573489748, guid: 98bbc2abbef7859f7971432477313f5a, type: 3}
+  m_PrefabInstance: {fileID: 4120265252445502741}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1924264901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1321,6 +1332,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 932684494731354552, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162541096646184922, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1285413014661308666, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1361,10 +1380,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3488266133696625534, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488266133696625534, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566554127160502159, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566554127160502159, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: heatBar
+      value: 
+      objectReference: {fileID: 1625503624}
+    - target: {fileID: 3566554127160502159, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: heatDamage
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3566554127160502159, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
       propertyPath: sunTransform
       value: 
       objectReference: {fileID: 410087041}
+    - target: {fileID: 3626809192949336017, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5648159677830666205, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

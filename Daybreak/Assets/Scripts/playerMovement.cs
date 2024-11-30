@@ -10,6 +10,7 @@ public class playerMovement : MonoBehaviour
     public int adjust;
     public float breakForce;
     private Vector3 moveDirection;
+    private Vector3 moveRotation;
     private float verticalDirection;
     private float verticalRotation;
     private float horizontalRotation;
@@ -59,24 +60,23 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         xyForce = move.ReadValue<Vector2>();
-        moveDirection.x = xyForce.x;
-        moveDirection.y = xyForce.y;
-        verticalDirection = ascend.ReadValue<float>() - descend.ReadValue<float>();
-        horizontalRotation = rotate.ReadValue<Vector2>().x;
-        verticalRotation = rotate.ReadValue<Vector2>().y;
+        moveDirection = new Vector3(xyForce.x, (ascend.ReadValue<float>() - descend.ReadValue<float>()), xyForce.y);
+        moveRotation = new Vector3(rotate.ReadValue<Vector2>().x, rotate.ReadValue<Vector2>().y,0);
     }
 
     private void FixedUpdate()
     {
-        rb.linearVelocity += new Vector3(moveDirection.x/adjust, verticalDirection/adjust, moveDirection.y/adjust);
-        rb.angularVelocity += new Vector3(verticalRotation/adjust, horizontalRotation/adjust, 0);
+        //rb.linearVelocity += new Vector3(moveDirection.x/adjust, verticalDirection/adjust, moveDirection.y/adjust);
+        //rb.angularVelocity += new Vector3(verticalRotation/adjust, horizontalRotation/adjust, 0);
+        rb.linearVelocity += ((rb.transform.up * moveDirection.y) + (rb.transform.right * moveDirection.x) + (rb.transform.forward * moveDirection.z)) * Time.deltaTime * moveSpeed;
+        rb.angularVelocity += ((rb.transform.up * moveRotation.x) + (rb.transform.right * moveRotation.y) + (rb.transform.forward * moveRotation.z)) * Time.deltaTime * moveSpeed;
         rb.linearVelocity = Vector3.ClampMagnitude(rb.linearVelocity, adjust);
         rb.angularVelocity = Vector3.ClampMagnitude(rb.angularVelocity, adjust);
         if (halt.ReadValue<float>() != 0)
         {
             //invert all directions
-            rb.linearVelocity += rb.linearVelocity*breakForce;
-            rb.angularVelocity += rb.angularVelocity*breakForce;
+            rb.linearVelocity -= rb.linearVelocity*breakForce*Time.fixedDeltaTime;
+            rb.angularVelocity -= rb.angularVelocity*breakForce*Time.fixedDeltaTime;
         }
     }
 }

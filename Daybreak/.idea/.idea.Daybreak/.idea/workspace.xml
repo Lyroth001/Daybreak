@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f50301a9-e4c2-4b32-a2ab-516477a704ec" name="Changes" comment="">
+
       <change beforePath="$PROJECT_DIR$/Assets/QuickDither/Pipelines/URP/DitheredMaterialBase.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/QuickDither/Pipelines/URP/DitheredMaterialBase.mat" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,25 +44,21 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+
     "git-widget-placeholder": "mainMenu",
+
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\zac\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\zac\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\zac\\AppData\\Local\\Symbols\\src"
-    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/6000.0.29f1/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Apps\UnityProj\Daybreak\Daybreak -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Apps\UnityProj\Daybreak\Daybreak" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -68,7 +66,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/6000.0.29f1/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Apps\UnityProj\Daybreak\Daybreak -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Apps\UnityProj\Daybreak\Daybreak" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -80,6 +78,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -90,6 +91,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -109,6 +113,7 @@
       <workItem from="1732986433906" duration="21000" />
       <workItem from="1732986654833" duration="28000" />
       <workItem from="1732986699589" duration="5523000" />
+      <workItem from="1732994898389" duration="4592000" />
     </task>
     <servers />
   </component>

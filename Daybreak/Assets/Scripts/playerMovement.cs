@@ -5,6 +5,7 @@ public class playerMovement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Rigidbody rb;
+    public Transform sunTransform;
     public float moveSpeed = 5f;
     public spacerMovement playerControls;
     public int adjust;
@@ -20,6 +21,8 @@ public class playerMovement : MonoBehaviour
     private InputAction rotate;
     private InputAction halt;
     private Vector2 xyForce;
+
+    public bool sunlight;
     
     private void Awake()
     {
@@ -66,8 +69,7 @@ public class playerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //rb.linearVelocity += new Vector3(moveDirection.x/adjust, verticalDirection/adjust, moveDirection.y/adjust);
-        //rb.angularVelocity += new Vector3(verticalRotation/adjust, horizontalRotation/adjust, 0);
+        sunlight = !Physics.Raycast((rb.position + new Vector3(10,0,0)), (sunTransform.forward * -1), out RaycastHit hit, Mathf.Infinity);
         rb.linearVelocity += ((rb.transform.up * moveDirection.y) + (rb.transform.right * moveDirection.x) + (rb.transform.forward * moveDirection.z)) * Time.deltaTime * moveSpeed;
         rb.angularVelocity += ((rb.transform.up * moveRotation.x) + (rb.transform.right * moveRotation.y) + (rb.transform.forward * moveRotation.z)) * Time.deltaTime * moveSpeed;
         rb.linearVelocity = Vector3.ClampMagnitude(rb.linearVelocity, adjust);

@@ -1,9 +1,15 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
+
 public class playerMovement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float heatDamage;
+    public float health = 1;
+    public Image heatBar;
     public Rigidbody rb;
     public Transform sunTransform;
     public float moveSpeed = 5f;
@@ -69,7 +75,7 @@ public class playerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        sunlight = !Physics.Raycast((rb.position + new Vector3(10,0,0)), (sunTransform.forward * -1), out RaycastHit hit, Mathf.Infinity);
+        sunlight = !Physics.Raycast((rb.position + new Vector3(0.5f,0,0)), (sunTransform.forward * -1), out RaycastHit hit, Mathf.Infinity);
         rb.linearVelocity += ((rb.transform.up * moveDirection.y) + (rb.transform.right * moveDirection.x) + (rb.transform.forward * moveDirection.z)) * Time.deltaTime * moveSpeed;
         rb.angularVelocity += ((rb.transform.up * moveRotation.x) + (rb.transform.right * moveRotation.y) + (rb.transform.forward * moveRotation.z)) * Time.deltaTime * moveSpeed;
         rb.linearVelocity = Vector3.ClampMagnitude(rb.linearVelocity, adjust);
@@ -79,6 +85,24 @@ public class playerMovement : MonoBehaviour
             //invert all directions
             rb.linearVelocity -= rb.linearVelocity*breakForce*Time.fixedDeltaTime;
             rb.angularVelocity -= rb.angularVelocity*breakForce*Time.fixedDeltaTime;
+        }
+
+        if (sunlight)
+        {
+            heatBar.rectTransform.localScale = new Vector3(health -= heatDamage * Time.fixedDeltaTime, 1, 1);
+            if (health <= 0)
+            {
+                health = 0;
+            }
+        }
+        else if (health < 1)
+        {
+            heatBar.rectTransform.localScale = new Vector3(health += Time.deltaTime * heatDamage,1, 1);
+            if (health > 1)
+            {
+                health = 1;
+            }
+
         }
     }
 }

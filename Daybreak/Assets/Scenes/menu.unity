@@ -178,11 +178,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Escape the dawn
 
-    
+
 
     Hide from the light
 
-    
+
 
     Flee '
   m_isRightToLeft: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 173.25552, y: 83.665726, z: -247.06409, w: -99.24458}
+  m_margin: {x: 173.25552, y: 83.665726, z: -758.2655, w: -641.659}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -475,7 +475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 230, y: 680}
+  m_AnchoredPosition: {x: 230, y: 706}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &520898088
@@ -647,8 +647,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4285229931
+  m_fontColor: {r: 0.4188679, g: 0.4188679, b: 0.4188679, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -865,6 +865,7 @@ MonoBehaviour:
   moveSpeed: 5
   adjust: 100
   breakForce: -0.05
+  sunlight: 0
 --- !u!54 &642140687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -996,6 +997,7 @@ GameObject:
   - component: {fileID: 952156453}
   - component: {fileID: 952156452}
   - component: {fileID: 952156451}
+  - component: {fileID: 952156454}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1020,7 +1022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -531, y: -385}
+  m_AnchoredPosition: {x: -468.2, y: -346.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952156451
@@ -1044,7 +1046,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.12452829, g: 0.10743554, b: 0.087169796, a: 1}
+    m_NormalColor: {r: 0.22264141, g: 0.18168378, b: 0.14072616, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1067,16 +1069,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 952156454}
+        m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
+        m_MethodName: changeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &952156452
@@ -1117,6 +1119,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952156449}
   m_CullTransparentMesh: 1
+--- !u!114 &952156454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952156449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d63551f6da09941947bc5d0522f33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameScene: level
 --- !u!1 &985065448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 230, y: 877}
+  m_AnchoredPosition: {x: 230, y: 920}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &998664075
@@ -1307,7 +1322,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -236.32257, y: -110.14606, z: -148.85281, w: 94.0918}
+  m_margin: {x: -236.32257, y: -110.14606, z: -959.5641, w: -135.58337}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1801,7 +1816,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 217.79147, y: 175.4112, z: -461.38428, w: -161.35004}
+  m_margin: {x: 217.79147, y: 169.43704, z: -461.38428, w: -157.92526}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -1292,6 +1292,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0a4513c2-8bc9-4fb5-96db-13b9dd8ab513
+    m_ActionName: 'Player/Halt[/Keyboard/r]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1311,6 +1315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1701764319}
   moveSpeed: 5
+  adjust: 100
+  breakForce: -0.05
 --- !u!54 &1701764319
 Rigidbody:
   m_ObjectHideFlags: 0

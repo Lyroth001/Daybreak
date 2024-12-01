@@ -716,11 +716,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1285413014661308666, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
   m_PrefabInstance: {fileID: 758972628}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &708745832 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 972244189732658583, guid: af0f215540b1a80498f1cc5db63afe57, type: 3}
-  m_PrefabInstance: {fileID: 1376338730}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &680000233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 932684494731354552, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
@@ -740,6 +735,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSpeed: 2
   verticalSpeed: 2
+--- !u!4 &708745832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 972244189732658583, guid: af0f215540b1a80498f1cc5db63afe57, type: 3}
+  m_PrefabInstance: {fileID: 1376338730}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &740343954 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3807986945573489748, guid: 98bbc2abbef7859f7971432477313f5a, type: 3}
@@ -815,11 +815,32 @@ PrefabInstance:
       propertyPath: sunTransform
       value: 
       objectReference: {fileID: 1490534172}
+    - target: {fileID: 5331735539376085292, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_Range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331735539376085292, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_Intensity
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331735539376085292, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_SpotAngle
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331735539376085292, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331735539376085292, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5378673731598991169, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
       propertyPath: m_Radius
       value: 0.3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6831322102599965329, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1285413014661308666, guid: 901eed7a84b3fa74bab98d8c2f5a3551, type: 3}

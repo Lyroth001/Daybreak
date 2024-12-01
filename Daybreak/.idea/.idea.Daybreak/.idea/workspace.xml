@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f50301a9-e4c2-4b32-a2ab-516477a704ec" name="Changes" comment="" />
+    <list default="true" id="f50301a9-e4c2-4b32-a2ab-516477a704ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Daybreak/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Daybreak/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Debris1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Debris1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Debris3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Debris3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/death.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/death.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/victory.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/victory.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/endGoal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/endGoal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

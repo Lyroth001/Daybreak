@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 533855308}
   - component: {fileID: 533855307}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Embrace the darkness.
 
-    Fear the Light'
+    Flee the Light.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1337,7 +1337,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1347,8 +1347,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -1361,7 +1361,7 @@ MonoBehaviour:
   environmentOcclusion: 0
   useWaterOcclusion: 0
   occlusionRadius: 0.1
-  sampleCount: 32
+  sampleCount: 1
   occlusionOffset: 0.05
   scale: 0.54
   allowOffScreen: 1
@@ -1429,7 +1429,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 0.03529412, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.1503219, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1492,13 +1492,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840355459}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.028561004, y: -0.5883771, z: -0.027686909, w: 0.80760753}
+  m_LocalRotation: {x: -0.2046304, y: -0.77474046, z: 0.086775124, w: 0.59192383}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -4.515, y: -72.125, z: -0.639}
+  m_LocalEulerAnglesHint: {x: -6.188, y: -106.61, z: 24.977}
 --- !u!1 &1868205646
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,13 +12,8 @@ public class endGoal : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        // If the player collides with the end goal, load the next scene
-        if (collider.isTrigger)
-        {
-            // Load the next scene
-            SceneManager.LoadScene("victory");
-        }
+        SceneManager.LoadScene("Victory");
     }
 }

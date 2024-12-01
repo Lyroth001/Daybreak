@@ -17,6 +17,10 @@ public class playerMovement : MonoBehaviour
     public spacerMovement playerControls;
     public int adjust;
     public float breakForce;
+    public AudioSource moveSource;
+    public AudioSource hurtSource;
+    public AudioClip moveSound;
+    public AudioClip hurtSound;
     private Vector3 moveDirection;
     private Vector3 moveRotation;
     private float verticalDirection;
@@ -81,6 +85,17 @@ public class playerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (moveDirection != Vector3.zero || moveRotation != Vector3.zero)
+        {
+            if (!moveSource.isPlaying)
+            {
+                moveSource.PlayOneShot(moveSound);
+            }
+            else
+            {
+                moveSource.Stop();
+            }
+        }
         sunlight = !Physics.Raycast((rb.position + new Vector3(0.5f,0,0)), (sunTransform.forward * -1), out RaycastHit hit, Mathf.Infinity);
         rb.linearVelocity += ((rb.transform.up * moveDirection.y) + (rb.transform.right * moveDirection.x) + (rb.transform.forward * moveDirection.z)) * Time.deltaTime * moveSpeed;
         rb.angularVelocity += ((rb.transform.up * moveRotation.x) + (rb.transform.right * moveRotation.y) + (rb.transform.forward * moveRotation.z)) * Time.deltaTime * moveSpeed;
@@ -100,6 +115,7 @@ public class playerMovement : MonoBehaviour
             {
                 health = 0;
             }
+            hurtSource.PlayOneShot(hurtSound);
         }
         else if (health < 1)
         {
@@ -108,7 +124,6 @@ public class playerMovement : MonoBehaviour
             {
                 health = 1;
             }
-
         }
     }
 }

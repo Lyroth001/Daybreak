@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f50301a9-e4c2-4b32-a2ab-516477a704ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Daybreak/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Daybreak/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Debris2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Debris2.fbx.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +114,7 @@
       <workItem from="1732986699589" duration="5523000" />
       <workItem from="1732994898389" duration="4592000" />
       <workItem from="1733008595822" duration="1486000" />
-      <workItem from="1733018800771" duration="3046000" />
+      <workItem from="1733018800771" duration="4607000" />
     </task>
     <servers />
   </component>

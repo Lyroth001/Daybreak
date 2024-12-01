@@ -14,6 +14,7 @@ public class endGoal : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("Victory");
     }
 }

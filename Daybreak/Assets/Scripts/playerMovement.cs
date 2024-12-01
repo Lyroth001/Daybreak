@@ -78,6 +78,7 @@ public class playerMovement : MonoBehaviour
         moveRotation = new Vector3(0, 0, rotate.ReadValue<float>());
         if (health <= 0)
         {
+            UnityEngine.Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("death");
         }
     }

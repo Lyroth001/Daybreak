@@ -17,6 +17,10 @@ public class playerMovement : MonoBehaviour
     public spacerMovement playerControls;
     public int adjust;
     public float breakForce;
+    public AudioClip moveSound;
+    public AudioClip hurtSound;
+    public AudioSource MoveSource;
+    public AudioSource hurtSource;
     private Vector3 moveDirection;
     private Vector3 moveRotation;
     private float verticalDirection;
@@ -72,6 +76,17 @@ public class playerMovement : MonoBehaviour
         xyForce = move.ReadValue<Vector2>();
         moveDirection = new Vector3(xyForce.x, (ascend.ReadValue<float>() - descend.ReadValue<float>()), xyForce.y);
         moveRotation = new Vector3(0, 0, rotate.ReadValue<float>());
+        if (moveDirection != Vector3.zero || moveRotation != Vector3.zero)
+        {
+            if (!MoveSource.isPlaying)
+            {
+                MoveSource.Play();
+            }
+        }
+        else
+        {
+            MoveSource.Stop();
+        }
         if (health <= 0)
         {
             UnityEngine.Cursor.lockState = CursorLockMode.None;
@@ -100,6 +115,7 @@ public class playerMovement : MonoBehaviour
             {
                 health = 0;
             }
+            hurtSource.PlayOneShot(hurtSound);
         }
         else if (health < 1)
         {

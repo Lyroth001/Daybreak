@@ -252,9 +252,9 @@ public partial class @spacerMovement: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""2D Vector"",
+                    ""name"": ""1D Axis"",
                     ""id"": ""1ea47360-5abf-4083-bbd7-569eeeaf8342"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -263,29 +263,7 @@ public partial class @spacerMovement: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""up"",
-                    ""id"": ""eb668749-110c-4191-adf7-708778e85505"",
-                    ""path"": ""<Keyboard>/numpad8"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""4d9060e7-3ae9-4eb8-9f39-1471f161ab20"",
-                    ""path"": ""<Keyboard>/numpad2"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
+                    ""name"": ""Positive"",
                     ""id"": ""8cbd6f51-c622-41bf-9e02-74b8beff08ad"",
                     ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
@@ -296,7 +274,7 @@ public partial class @spacerMovement: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""right"",
+                    ""name"": ""Negative"",
                     ""id"": ""06df1d2e-c8a5-4805-b516-24f673309093"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
@@ -519,6 +497,17 @@ public partial class @spacerMovement: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""36e52cba-0905-478e-a818-f4bfcb9f3b9a"",
                     ""path"": ""<Keyboard>/ctrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7ffe608f-e58b-4e30-aef4-6b8c8c3a7512"",
+                    ""path"": ""<Keyboard>/#(C)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",

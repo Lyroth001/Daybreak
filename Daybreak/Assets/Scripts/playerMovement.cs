@@ -71,7 +71,7 @@ public class playerMovement : MonoBehaviour
     {
         xyForce = move.ReadValue<Vector2>();
         moveDirection = new Vector3(xyForce.x, (ascend.ReadValue<float>() - descend.ReadValue<float>()), xyForce.y);
-        moveRotation = new Vector3(rotate.ReadValue<Vector2>().x, rotate.ReadValue<Vector2>().y,0);
+        moveRotation = new Vector3(0, 0, rotate.ReadValue<float>());
         if (health <= 0)
         {
             SceneManager.LoadScene("death");
